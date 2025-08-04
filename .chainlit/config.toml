@@ -1,13 +1,8 @@
+# .chainlit/config.toml  — v2-compatible
 [project]
-enable_telemetry = false
+enable_telemetry = false       # keep if you wish
 
 [UI]
-name = "Pasante AI ver1.0"
+name        = "Pasante AI ver1.0"
 description = "Powered by Inferencia Digital"
-default_theme = "light"
 
-[UI.theme.light]
-primary = "#031B4E"
-primary_dark = "#0061EB"
-background = "#FFFFFF"
-paper = "#F5F5F5"

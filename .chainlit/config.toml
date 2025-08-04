@@ -1,0 +1,13 @@
+[project]
+enable_telemetry = false
+
+[UI]
+name = "Pasante AI ver1.0"
+description = "Powered by Inferencia Digital"
+default_theme = "light"
+
+[UI.theme.light]
+primary = "#031B4E"
+primary_dark = "#0061EB"
+background = "#FFFFFF"
+paper = "#F5F5F5"

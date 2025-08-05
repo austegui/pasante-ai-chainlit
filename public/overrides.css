@@ -1,0 +1,12 @@
+/* Ocultar el icono/-botón de Readme */
+header [data-testid="readme-link"],
+header [data-testid="readme-button"] { display: none !important; }
+
+/* Sobrescribir leyenda del footer */
+footer { position: relative; }
+footer > *               { display: none; }     /* oculta el texto original */
+footer::after            {                      /* tu propio mensaje */
+  content: "Pasante AI © 2025 – Verifica toda la información legal.";
+  font-size: .75rem;
+  color: var(--muted-foreground);
+}

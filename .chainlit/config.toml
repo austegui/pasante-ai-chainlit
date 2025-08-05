@@ -1,5 +1,4 @@
 # .chainlit/config.toml  — v2-compatible
-[project]
 enable_telemetry = false       # keep if you wish
 
 [UI]

@@ -1,2 +1,10 @@
-.chainlit/*          # ignora todo dentro de .chainlit
-!.chainlit/config.toml   # vuelve a INCLUIR solo config.toml
+# Excluir todo el directorio
+.chainlit/*
+
+# Volver a incluir solo el archivo de configuración
+!.chainlit/config.toml
+
+# Otros ignores habituales
+.git/
+__pycache__/
+*.py[cod]

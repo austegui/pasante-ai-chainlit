@@ -5,5 +5,5 @@ enable_telemetry = false       # keep if you wish
 [UI]
 name        = "Pasante AI ver1.0"
 description = "Powered by Inferencia Digital"
-custom_css  = "/public/overrides.css"
+custom_css  = "overrides.css"
 

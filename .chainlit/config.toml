@@ -1,11 +1,6 @@
-# .chainlit/config.toml   (válido para Chainlit ≥ 1.0)
-
 [ui]
 name        = "Pasante AI ver1.0"
 description = "Powered by Inferencia Digital"
 custom_css  = "/public/overrides.css"
-
-[features]
-telemetry_enabled = false
 
 

@@ -1,7 +1,10 @@
-# .dockerignore
-.chainlit/
+# --- Included Files ---
+!.chainlit
+!.chainlit/config.toml
+
+# --- Excluded Files ---
+.chainlit/*          # ignora lo demás dentro de .chainlit
 .git/
 __pycache__/
-*.pyc
-*.pyo
-!.chainlit/config.toml
+*.py[cod]
+

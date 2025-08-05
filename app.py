@@ -4,7 +4,7 @@ import json
 import os
 
 # Get endpoint from environment variable
-GRADIENT_ENDPOINT = os.getenv("GRADIENT_ENDPOINT", "https://qe7ahat47vdp32r2akh6gtrw.agents.do-ai.run/v1/chat/completions")
+GRADIENT_ENDPOINT = os.getenv("GRADIENT_ENDPOINT", "https://qe7ahat47vdp32r2akh6gtrw.agents.do-ai.run/api/v1/chat/completions")
 
 @cl.on_message
 async def main(message: cl.Message):

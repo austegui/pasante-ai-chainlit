@@ -1,20 +1,19 @@
 # ---------- base image ----------
 FROM python:3.11-slim
-
-# ---------- working dir ----------
 WORKDIR /app
 
-# ---------- Python deps ----------
+# ---------- dependencies ----------
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ---------- source code ----------
+# ---------- source ----------
 COPY . .
 
-# ---------- runtime ----------
 EXPOSE 8080
-CMD ["chainlit", "run", "app.py",
-     "--host", "0.0.0.0",
-     "--port", "${PORT:-8080}",
-     "--headless",
-     "-c", "/app/config/chainlit.toml"]
+
+# ---------- run ----------
+CMD sh -c 'chainlit run app.py \
+           --host 0.0.0.0 \
+           --port ${PORT:-8080} \
+           --headless \
+           -c /app/config/chainlit.toml'

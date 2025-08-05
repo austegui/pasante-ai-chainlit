@@ -1,5 +1,2 @@
-# --- Excluded ---
 .chainlit/*          # ignora todo dentro de .chainlit
-
-# --- Included ---
 !.chainlit/config.toml   # vuelve a INCLUIR solo config.toml

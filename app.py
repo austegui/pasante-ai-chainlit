@@ -1,13 +1,9 @@
-import chainlit as cl
-import httpx, os
+import chainlit as cl, httpx, os
 
-ENDPOINT = os.getenv(
-    "GRADIENT_ENDPOINT",
-    "https://qe7ahat47vdp32r2akh6gtrw.agents.do-ai.run/api/v1/chat/completions"
-)
-HEADERS = {
+ENDPOINT = os.getenv("GRADIENT_ENDPOINT")
+HEADERS  = {
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {os.getenv('GRADIENT_KEY')}"   # crea esta var en DO
+    "Authorization": f"Bearer {os.getenv('GRADIENT_KEY')}"
 }
 
 @cl.on_message
@@ -26,3 +22,7 @@ async def main(msg_in: cl.Message):
         except Exception as e:
             reply.content = f"Exception: {e}"
         await reply.update()
+
+@cl.on_chat_start
+async def start():
+    await cl.Message("Hola Ernesto, ¿cómo puedo ayudarte hoy? 🤖").send()

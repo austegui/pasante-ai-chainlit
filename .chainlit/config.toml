@@ -1,6 +1,0 @@
-[ui]
-name        = "Pasante AI ver1.0"
-description = "Powered by Inferencia Digital"
-custom_css  = "/public/overrides.css"
-
-
